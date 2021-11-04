@@ -8,7 +8,7 @@ import settings
 import discord
 import message_handler
 # Interactive pages and help
-from discord_interactive import Page, Help
+#from discord_interactive import Page, Help
 
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from events.base_event              import BaseEvent
@@ -78,6 +78,8 @@ def main():
     @client.event
     async def on_message_edit(before, after):
         await common_handle_message(after)
+
+    
 
     # Finally, set the bot running
     keep_alive()
