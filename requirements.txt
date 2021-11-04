@@ -3,6 +3,7 @@ APScheduler
 async-timeout
 chardet
 discord.py
+discord_interactive
 emoji
 multidict
 pytz
