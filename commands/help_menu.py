@@ -6,7 +6,7 @@ from discord_interactive import Page, Help
 # Your friendly example event
 # Keep in mind that the command name will be derived from the class name
 # but in lowercase
-
+# help command
 # So, a command class named Random will generate a 'random' command
 
 class Help(BaseCommand):
