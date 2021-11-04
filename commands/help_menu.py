@@ -23,7 +23,7 @@ class Help(BaseCommand):
 
     # Override the handle() method
     # It will be called every time the command is received
-    async def handle(self, params, message, client):
+    async def handle(self):
         # 'params' is a list that contains the parameters that the command 
         # expects to receive, t is guaranteed to have AT LEAST as many
         # parameters as specified in __init__
