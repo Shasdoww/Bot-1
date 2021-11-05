@@ -79,7 +79,6 @@ def main():
     async def on_message_edit(before, after):
         await common_handle_message(after)
 
-    
 
     # Finally, set the bot running
     keep_alive()

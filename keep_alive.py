@@ -1,3 +1,9 @@
+"""
+
+Template file, used to run the bot as a webserver, in order to keep him alive even after several hours without activity.
+
+"""
+
 from flask import Flask
 from threading import Thread
 
@@ -10,6 +16,6 @@ def home():
 def run():
   app.run(host='0.0.0.0',port=8080)
 
-def keep_alive():
+def keep_alive():  
     t = Thread(target=run)
     t.start()
